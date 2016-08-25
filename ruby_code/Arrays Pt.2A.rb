@@ -1,0 +1,1 @@
+puts Array.new(4){|n| n*6}.inspect
