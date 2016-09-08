@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster|Raleway:400,300,700);
+/*=====NAVBAR=====*/
+nav.navbar{
+	position:absolute;
+	top:100;
+	right:0;
+	left:0;
+	z-index:20;
+}
+.navbar-default{
+	background-color:transparent;
+	border-color: transparent;
+}
+
+.nav li a:hover{
+	background-color:transparent;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover{
+	color:#F8512F;
+	background-color: rgba(17,17,17,.2);
+}
+.navbar-default .navbar-nav>li>a {
+	color:#FFF;
+	text-shadow: 1px 1px 2px #0A0A0A;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{
+	color:#FFF;
+	background-color: rgba(17,17,17,.5);
+}
+
+
+/*===== CAROUSEL=====*/
+.carousel{
+	margin-bottom:60px;
+}
+
+.carousel .item{
+	width:100%;
+	height:600px;
+	background-size:cover;
+	background-position:center;
+}
+
+.slide1{
+	background-image:url(../img/wood-2.jpg);
+}
+
+.slide2{
+	background-image:url(../img/restaurant-2.jpg);
+}
+
+.slide3{
+	background-image:url(../img/farm-2.jpg);
+}
+
+.main_logo{
+	max-height: 300px;
+}
+
+.btn-default{
+	color:#FFF;
+	background-color:#F8512F;
+	border-color:transparent;
+}
+
+.btn-default:hover{
+	background-color: #D34326;
+	border-color:transparent;
+}
+
+.carousel-caption p{
+	color:#F7F7F7;
+	font-size: 16px;
+}
+
+.carousel-caption{
+	z-index: 10;
+	padding-bottom:140px;
+}
+
+
+
+/*=====OUR STORY=====*/
+
+#ourstory, #menu, #review, #contact{
+	min-height:600px;
+}
+
+#ourstory h2 {
+	font-family:'Lobster', cursive;
+	color:#F8512F;
+	font-size:30px;
+	text-shadow: 1px 1px 1px #0A0A0A;
+}
+
+#ourstory h3{
+	font-family:'Raleway', sans-serif;
+	font-family:700;
+	font-size:23px;
+	margin-top:0;
+}
+
+#ourstory p{
+	font-family:'Raleway', sans-serif;
+	font-weight:300;
+}
+
+#ourstory .story-year {
+	color: rgba(149,147,147,0.2);
+	position: absolute;
+	z-index: -1;
+	text-shadow:none;
+	font-size:158px;
+}
+
+#ourstory .row{
+	margin-top:30px;
+}
+/*=====REVIEW=====*/
+
+#review{
+	height:200px;
+	background-image:url(../img/food_review.jpg);
+	background-size:cover;
+	background-position: bottom;
+	background-attachment: fixed;
+}
+
+#review h2{
+	font-family:'Lobster', cursive;
+	font-size:80px;
+	color:#F8512F;
+	text-shadow: 1px 1px 5px #0A0A0A;
+}
+
+#review p{
+	color:#FFF;
+	font-family:'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	text-shadow: 1px 1px 5px #0A0A0A;
+}
+#review .center{
+		float:none;
+		margin:0 auto;
+		background-color: rgba(20,20,20,.6);
+		top:145px;
+		padding:10px;
+		border-radius:5px;
+}

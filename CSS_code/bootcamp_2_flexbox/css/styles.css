@@ -1,0 +1,21 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.flex-container {
+	height:300px;
+	display:flex;
+	display: -webkit-flex;
+	background-color:blue;
+	width:100%;
+	-webkit-align-items:stretch;
+	align-items:stretch;
+}
+
+.flex-item {
+	background-color:red;
+	width:20%;
+	margin: 5px;
+	padding: 5px;
+	color:white;
+}

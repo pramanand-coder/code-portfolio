@@ -1,0 +1,95 @@
+@import url(http://fonts.googleapis.com/css?family=Satisfy|Open+Sans:400,300italic,700);
+
+/*============ HEADER ============ */
+.logo{
+	width:90px;
+}
+
+header h1{
+	color:#FF827B;
+	font-family:'Satisfy', cursive;
+	margin-top:20px;
+}
+
+nav li a{
+	font-size:20px;
+	color:#61AEE6;
+	font-family:'Open Sans', sans-serif;
+	font-weight:400;
+}
+
+a:hover {
+	color:#FF827B;
+}
+nav{
+	top:20px;
+}
+
+/*==========END OF HEADER==========*/
+
+/*==========JUMBOTRON==========*/
+
+.jumbotron {
+	background-image:url("../img/hero.jpg");
+	background-size:cover;
+	background-position:center;
+	height:450px;
+}
+
+.jumbotron h2{
+	font-family:'Open Sans', sans-serif;
+	font-weight:300;
+	color:#FFFFFF;
+}
+
+/*==========END OF JUMBOTRON==========*/
+
+/*==========CONTENT==========*/
+
+
+/*==========END OF CONTENT==========*/
+
+/*==========FOOTER==========*/
+
+footer{
+	background-color:#231F20;
+	padding-top:20px;
+}
+
+footer a{
+	color:#BFC0C1;
+}
+
+.contact-info {
+	padding-top:15px;
+	padding-left:40px;
+	border-left:1px solid #333;
+	border-right:1px solid #333;
+}
+
+.social{
+	padding-top:15px;
+}
+@media (max-width:767px){
+	.social{
+		text-align:center;
+		font-size:45px;
+	}
+	.center{
+		float:none;
+		margin:0 auto;
+	}
+	header h1{
+		position:relative;
+		top:20px;
+	}
+	nav{
+		top:0;
+	}
+	.pull-right{
+		float:left!important;
+		margin-left:20px;
+	}
+}
+
+/*==========END OF FOOTER==========*/
