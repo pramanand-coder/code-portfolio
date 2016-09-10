@@ -1,0 +1,281 @@
+/* GLOBAL STYLES */
+
+/*<link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One|Aguafina+Script|Alice' rel='stylesheet' type='text/css'>*/
+
+html, body {
+    height:100%;
+}
+body {
+    margin:0px;
+    padding:0px;
+    background-color:#3399FF;/*THIS COLOR IS LIGHT BLUE*/
+    font-family: 'Belleza 400', sans-serif;
+    font-size:16px;
+    font-weight:400;
+    color:#66FF33; /*THIS COLOR IS LIGHT GREEN*/
+}
+h1, h2, h3 {
+    margin:0px;
+    padding:0px;
+    color:#FF9933;/*THIS COLOR IS PEACH*/
+    font-family: 'Aguafina Script 400', cursive;
+}
+p {
+    line-height:100%;
+    margin:15px 0px;
+    font-family: 'Belleza 400', sans-serif;
+}
+ul {
+    padding:0px;
+    list-style:none;
+}
+strong, b {
+    color:#FFFFFF;
+}
+a {
+    color:#FFFFFF;
+    text-decoration:none;
+   }
+a:hover {
+    color:#FF9900;/* THIS COLOR IS ORANGE*/
+}
+.container {
+    overflow:hidden;
+    margin:0px auto;
+    width:1200px;
+}
+
+/* HEADER SECTION BEGINS HERE */
+#header {
+    position:relative;
+    padding:15px 0px;
+}
+#logo a{
+    color:#66FF33;
+    font-family: 'Aguafina Script', cursive;
+}
+#logo a:hover{
+    color:#FFFFFF;
+}
+
+/* MENU SECTION BEGINS HERE*/
+#menu {
+    position:absolute;
+    top:2em;
+    right:5%;
+}
+#menu ul {
+    display:inline-block;
+}
+#menu li {
+    display:block;
+    float:left;
+    text-align:center;
+}
+#menu li:after {
+    content:"|";
+    padding:16px 20px;
+    font-weight:600;
+    color:rgb(255,255,255);/*WHITE*/
+}
+#menu li a {
+    text-decoration:none;
+    text-transform:uppercase;
+    font-size:1em;
+    font-weight:600;
+    color:rgb(255,255,255);
+    font-family: 'Bangers', cursive;
+}
+#menu li:hover a, #menu li.active a {
+    color:rgb(255,255,0);/*YELLOW*/
+}
+#menu ul li.active {
+    color:rgb(255,255,0);/*YELLOW*/
+}
+/*#menu li.first::before {content:"|";}*/
+/*MENU SECTION ENDS HERE*/
+
+/* HEADER SECTION ENDS HERE */
+
+/* BANNER SECTION BEGINS HERE */
+#banner {
+    overflow:hidden;
+    padding:125px 0px;
+    border-top:3px solid #FF0000;/*THIS COLOR IS RED*/
+    border-bottom:3px solid #FF0000;
+    background-size:cover;
+    background:url(../images/Banner_Photo.jpg) no-repeat center #FFFFFF;
+}
+#bannerAbout {
+    overflow:hidden;
+    padding:45px 0px;
+    border-top:3px solid #FF0000;/*THIS COLOR IS RED*/
+    border-bottom:3px solid #FF0000;/*THIS COLOR IS RED*/
+    background-color:#FFFFFF;
+    /*background:url('../images/banner_about.jpg') no-repeat center #8DC63F;*//*Single quotes used to illustrate usage in CSS*/
+}
+#bannerContact {
+    overflow:hidden;
+    padding:45px 0px;
+    border-top:3px solid #FF0000;/*THIS COLOR IS RED*/
+    border-bottom:3px solid #FF0000;/*THIS COLOR IS RED*/
+    background-color:rgb(255,255,0);/*THIS COLOR IS YELLOW*/
+    /*background:url('../images/banner_about.jpg') no-repeat center #8DC63F;*//*Single quotes used to illustrate usage in CSS*/
+}
+.bannerTitle {
+    color:#FF0000;
+    font-size:3em;
+}
+/* BANNER SECTION ENDS HERE */
+/*BUTTON STYLES START HERE*/
+a.button {
+    display:inline-block;
+    padding:10px 15px;
+    background-color:#FF0000;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:18px;
+    border-radius:8px;
+    margin:10px 0px;
+    color:#FFFFFF;
+    font-family: 'Bangers', cursive;
+}
+a.button:hover {
+    background-color:#66FF33;/*LIGHT GREEN*
+}
+/*BUTTON STYLES END HERE*/
+}
+/*OUR THREE COLUMNS SECTION*/
+
+.boxA, .boxB, .boxC{
+    width:384px;
+}
+.boxA h2,.boxB h2, .boxC h2{
+    font-weight:500;
+    font-size:3em;
+    text-align:center;
+    line-height:1.5em;
+}
+.boxA p, .boxB p,.boxC p{
+    padding: 0px 4px;/*CHANGE THE ATTRIBUTES FOR P TAGS HERE*/
+    color:#FFFFFF;
+}
+.boxA, .boxB {
+ float:left;
+ margin-right:24px;
+}
+.boxC{
+    float:left;
+}
+.box span {
+    background-color:#FFFFFF;
+    color:#006600;
+    display:block;
+    font-size:2em;
+    font-weight:600;
+    margin:0px 0px 12px 0px;
+    padding:1em;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+/*ABOUT SECTION*/
+#featured .align-left{
+    float:left;
+    padding-top:20px;
+    width:384px;
+}
+#featured .align-right {
+    float:right;
+    width:775px;
+    /*font-size:1em;*/
+}
+/*===== FOOTER SECTION =====*/
+footer{
+    margin-top:25px;
+}
+#copyright {
+    overflow:hidden;
+    padding:30px;
+    border-top:2px dotted #FF9933;
+    background-color:#000000;
+}
+#copyright p {
+    letter-spacing:2px;
+    text-align:center;
+    font-size:1.75em;
+    color:#FFFFFF;
+}
+#copyright a {
+    color:#8DC63F;
+}
+#copyright a:hover {
+    color:#FF0000;
+}
+
+/*Custom Programming*/
+.fa {
+    background-color:#FFFFFF;
+    border:3px solid #FF0000;
+    border-radius:210px;
+    font-size:2em;
+    margin:13px;
+    color:#000000;
+    height:28px;
+    width:28px;
+    padding:10px;
+}
+.fa-facebook{
+    background-color:#0C516E;
+}
+.fa-twitter{
+    background-color:#8CA6D9;
+}
+.fa-instagram{
+    background-color:#FF0000;
+    border:3px solid #FFFFFF;
+}
+.social {
+    text-align:center;
+}
+
+.vidContainer{
+    width:90%;
+    margin:0px auto;
+}
+#videoHolder{
+    width:100%;
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0px;
+    overflow:hidden;
+}
+#videoHolder iframe, .video-container object,.video-container embed{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+#contactForm{
+    background-color:#999966;
+    border-radius:8px;
+    margin:20px 0px 0px 0px;
+    padding:10px;
+}
+#map {
+    border-radius:8px;
+    margin:20px 0px 0px 0px;
+    padding:10px;
+}
+#address {
+    float:left;
+    margin:0px 20px 0px 0px;
+}
+
+#phone{
+    float:right;
+}
