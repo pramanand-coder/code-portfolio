@@ -1,0 +1,177 @@
+Project 1
+
+Part 1A
+#include<iostream>
+using namespace std;
+
+int main()
+
+{
+	int number1;
+	int number2;
+	cout<<"enter two integers";
+	cin>>number1>>number2;
+	cout<<"the sum is"<<number1+number2
+    <<"the product is"<<number1*number2
+	<<"the difference is"<<number1-number2
+	<<"the quotient is"<<number1/number2<<endl;
+	system("pause");
+
+}
+
+Part 1B
+#include<iostream>
+using namespace std;
+
+int main()
+
+{
+	cout<<"********\n********\n********\n"
+    <<"********\n********\n********\n"
+	<<"********\n********\n";
+
+	cout<<endl;
+	system("pause");
+
+}
+
+Part 1C
+#include<iostream>
+using namespace std;
+
+int main()
+
+{
+	int number;
+	number=0;
+	cout<<"integer\tsquare\tcube\n";
+	cout<<number<<'\t'<<number*number<<'\t'
+    <<number*number*number<<"\n";
+	number=1;
+	cout<<"integer\tsquare\tcube\n";
+	cout<<number<<'\t'<<number*number<<'\t'
+    <<number*number*number<<"\n";
+	number=2;
+	cout<<"integer\tsquare\tcube\n";
+	cout<<number<<'\t'<<number*number<<'\t'
+    <<number*number*number<<"\n";
+	number=3;
+	cout<<"integer\tsquare\tcube\n";
+	cout<<number<<'\t'<<number*number<<'\t'
+    <<number*number*number<<"\n";
+	number=4;
+	cout<<"integer\tsquare\tcube\n";
+	cout<<number<<'\t'<<number*number<<'\t'
+    <<number*number*number<<"\n";
+	number=5;
+	cout<<"integer\tsquare\tcube\n";
+	cout<<number<<'\t'<<number*number<<'\t'
+    <<number*number*number<<"\n";
+	number=6;
+	cout<<"integer\tsquare\tcube\n";
+	cout<<number<<'\t'<<number*number<<'\t'
+    <<number*number*number<<"\n";
+	number=7;
+	cout<<"integer\tsquare\tcube\n";
+	cout<<number<<'\t'<<number*number<<'\t'
+    <<number*number*number<<"\n";
+	number=8;
+	cout<<"integer\tsquare\tcube\n";
+	cout<<number<<'\t'<<number*number<<'\t'
+    <<number*number*number<<"\n";
+	number=9;
+	cout<<"integer\tsquare\tcube\n";
+	cout<<number<<'\t'<<number*number<<'\t'
+    <<number*number*number<<"\n";
+	number=10;
+	cout<<"integer\tsquare\tcube\n";
+	cout<<number<<'\t'<<number*number<<'\t'
+    <<number*number*number<<"\n"<<endl;
+	system("pause");
+
+}
+
+Part 1D
+Account 1.h
+class Account
+
+{
+public:
+	Account(int);
+	void credit(int);
+	void debit(int);
+	int getBalance();
+private:
+	int balance;
+
+};
+
+Account 2.cpp
+#include<iostream>
+#include "Account 1.h"
+using namespace std;
+
+Account::Account(int initialBalance)
+
+{
+	balance=0;
+	if (initialBalance > 0)
+		balance=initialBalance;
+	if (initialBalance < 0)
+    cout<<"Error:Initial balance cannot be negative.\n"<<endl;
+
+};
+
+void Account::credit(int amount)
+
+{
+	balance=balance+amount;
+}
+
+void Account::debit(int amount)
+
+{
+	if (amount>balance)
+       cout<<"Debit amount exceeded account balance.\n"<<endl;
+	if (amount<=balance)
+		balance=balance-amount;
+}
+
+int Account::getBalance()
+
+{
+	return balance;
+};
+ 
+Exercise 12.cpp
+#include<iostream>
+#include"Account 1.h"
+using namespace std;
+
+int main()
+
+{
+	Account account1(50);
+	Account account2(25);
+	cout<<"account1 balance:$"<<account1.getBalance()<<endl;
+	cout<<"account2 balance:$"<<account2.getBalance()<<endl;
+	int withdrawalAmount;
+	cout<<"\nEnter withdrawal amount for account1:";
+	cin>>withdrawalAmount;
+	cout<<"\nattempting to subtract"<<withdrawalAmount<<"from account1 balance\n\n";
+	account1.debit(withdrawalAmount);
+
+	cout<<"account1 balance:$"<<account1.getBalance()<<endl;
+	cout<<"account2 balance:$"<<account2.getBalance()<<endl;
+	
+	cout<<"\nEnter withdrawal amount for account2:";
+	cin>>withdrawalAmount;
+	cout<<"\nattempting to subtract"<<withdrawalAmount<<"from account2 balance\n\n";
+	account2.debit(withdrawalAmount);
+
+	cout<<"account1 balance:$"<<account1.getBalance()<<endl;
+	cout<<"account2 balance:$"<<account2.getBalance()<<endl;
+	system("pause");
+
+}
+
