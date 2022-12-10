@@ -1,4 +1,0 @@
-SELECT 
-  DISTINCT fuel_type
- FROM 
-   `cars.car_info`;
