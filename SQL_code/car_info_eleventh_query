@@ -1,0 +1,4 @@
+DELETE 
+      cars.car_info
+WHERE
+      compression_ratio = 70;
