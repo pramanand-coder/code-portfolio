@@ -1,0 +1,5 @@
+SELECT
+  DISTINCT num_of_cylinders
+
+FROM
+  `cars.car_info`;
