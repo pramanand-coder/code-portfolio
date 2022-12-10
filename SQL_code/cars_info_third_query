@@ -1,6 +1,0 @@
-SELECT  
-  *
-FROM
-  cars.car_info
-WHERE
-  num_of_doors IS NULL;
